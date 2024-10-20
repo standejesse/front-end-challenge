@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+
+:root {
+  --primary-color: #2f3676;
+  --primary-color-100: #191847;
+  --primary-color-200: #071723;
+  --grayscale: #dde3e9;
+  --grayscale-100: #c5cfd6;
+  --grayscale-200: #555555;
+  --red: #f59393;
+  --red-100: #f33232;
+  --green: #00c57c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #639;
+  padding: 0px 20px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.container {
+  background-color: white;
+  width: 560px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 30px auto;
+  position: relative;
+  border-radius: 12px;
+  background-image: url(../images/header.png);
+  background-size: 100% 20%;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 21px;
+  margin-bottom: 40px;
+}
+
+header .title {
+  width: 230px;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+  width: 219px;
+}
+
+header span {
+  color: white;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px;
+}
+
+form section:not(.button-content) {
+  padding: 23px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.section-content h2 {
+  color: var(--primary-color-200);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-form-control {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.input-form-control input {
+  appearance: none;
+  background-color: var(--primary-color);
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.input-form-control label {
+  color: var(--primary-color-200);
+}
+
+.input-form-control input:hover {
+  background-color: var(--primary-color-100);
+}
+
+.input-form-control input:checked {
+  background-image: url(../images/checkIcon.svg);
+  background-color: white;
+}
+
+.quantity-container {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+.quantity-container button {
+  display: flex;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.quantity-container button img {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.quantity-container button:hover {
+  background-color: var(--primary-color-100);
+}
+
+.quantity-container input {
+  width: 60px;
+  height: 42px;
+  color: var(--primary-color-200);
+  font-size: 20px;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  background-color: var(--grayscale);
+  font-weight: 700;
+  border: 1px solid var(--primary-color);
+}
+
+.textarea-content {
+  background-color: var(--grayscale);
+  border-radius: 4px;
+  color: var(--primary-color-200);
+  border: 1px solid var(--primary-color);
+  padding: 10px;
+}
+
+.button-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 32px 40px;
+  background-color: var(--grayscale);
+  align-items: center;
+  width: 100%;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  gap: 100px;
+}
+
+.helper-text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  visibility: hidden;
+}
+
+.sucess-message {
+  color: var(--green);
+}
+
+.error-message {
+  color: var(--red-100);
+}
+
+.submit-button {
+  padding: 8px 32px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: var(--primary-color-100);
+}
+
+.error-inputs {
+  border: 1px solid var(--red-100);
+  background-color: var(--red) !important;
+}
+
+button:disabled {
+  opacity: 50%;
+  cursor: not-allowed;
+}
+
+.input-form-control input:disabled {
+  background-color: var(--grayscale-100);
+}

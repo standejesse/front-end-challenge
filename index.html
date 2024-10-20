@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Teste Frontend VAGAS.com</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="title">Formulário para compra de</h1>
+        <span>Pacote de Stickers</span>
+      </header>
+
+      <main>
+        <form action="/">
+          <section class="section-content">
+            <h2>Quais Stickers?</h2>
+            <div class="input-container">
+              <div class="input-form-control">
+                <input type="checkbox" name="stickers-type" id="type-react" />
+                <label for="type-react">React</label>
+              </div>
+              <div class="input-form-control">
+                <input type="checkbox" name="stickers-type" id="type-vue" />
+                <label for="type-vue">Vue</label>
+              </div>
+              <div class="input-form-control">
+                <input type="checkbox" name="stickers-type" id="type-angular" />
+                <label for="type-angular">Angular</label>
+              </div>
+            </div>
+          </section>
+
+          <section class="section-content">
+            <h2>Quantos stickers de cada?</h2>
+            <div class="quantity-container">
+              <button type="button" disabled>
+                <img
+                  src="images/decrementIcon.svg"
+                  alt="decrement button"
+                  id="decrement-button"
+                />
+              </button>
+              <input
+                type="number"
+                name="stickers-quantity"
+                id="stickers-quantity-input"
+                value="0"
+              />
+              <button type="button">
+                <img
+                  src="images/incrementIcon.svg"
+                  alt="increment button"
+                  id="increment-button"
+                />
+              </button>
+            </div>
+          </section>
+
+          <section class="section-content">
+            <h2>Observações:</h2>
+            <textarea
+              class="textarea-content"
+              name="observation"
+              id="observation-textarea"
+              cols="30"
+              rows="7"
+            ></textarea>
+          </section>
+
+          <section class="button-content">
+            <p class="helperText"></p>
+            <button type="submit" class="submit-button">ENVIAR</button>
+          </section>
+        </form>
+      </main>
+    </div>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
